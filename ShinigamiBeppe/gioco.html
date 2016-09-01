@@ -2,21 +2,22 @@
 <html lang="en">
 
 <head>
-   
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
   <title> Shinigami </title>
 
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="./css/style.css" rel="stylesheet" type="text/css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="./css/lightcase.css" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-  <script type="text/javascript" src="./js/lightcase.js" ></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
+  <script type="text/javascript" src="./js/lightcase.js" ></script>
+  <script type="text/javascript" src="./js/app.js" ></script>
 
 </head>
 
@@ -24,7 +25,7 @@
   <div class="full-view">
     <header>
       <frameset height="100%" ><img class="img-responsive p-0" src="img/sfondologo.jpg"/></frameset>
-     
+
     <nav class="navbar navbar-default" data-spy="affix" data-offset-top="843.13">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -43,7 +44,7 @@
 
             <li class="active"><a href="gioco.html">Gioco</a></li>
 
-           
+
           </ul>
 
         </div>
@@ -69,9 +70,9 @@
           <div class="row">
           <div class="font col-xs-12 col-md-8">
           <h1 class="font-title">Consegna del Death Note</h1>
-<p> Ad inizio partita, vanno creati tanti mazzetti quanti sono 
+<p> Ad inizio partita, vanno creati tanti mazzetti quanti sono
 i giocatori, ogni mazzetto deve contenere:<ul>
-<li>Una tessera DN (coperta)</li> 
+<li>Una tessera DN (coperta)</li>
 <li>Due carte DN (coperte)</li>
 </ul></p>
 </div>
@@ -84,7 +85,7 @@ i giocatori, ogni mazzetto deve contenere:<ul>
 deve contenere anche la Carta DN piena. <br>
 Deve esserci solo un mazzetto del genere in gioco a partita </b><br></p>
 <p>Dopo aver mescolato i mazzetti, ogni giocatore ne
-riceve uno, e decide se depositare la propria Tessera DN 
+riceve uno, e decide se depositare la propria Tessera DN
 sullo slot Personale o sullo slot Appartamento della propria
 Scheda del Giocatore.
 </p>
@@ -110,7 +111,7 @@ Scheda del Giocatore.
 </div>
 </div>
 
-  <div class="row">        
+  <div class="row">
         <div class="col-xs-12  col-md-10 col-md-offset-1 card  text-center" data-toggle="collapse" data-target="#turno">
           <div class="card-header">
             <h3 class="font-title resize">Turno</h3>
@@ -124,18 +125,18 @@ Scheda del Giocatore.
            <div class="font">
            <p>Ogni giocatore, durante il proprio turno:<ul>
 
-<li>Lancia il dado e sposta la sua pedina per un numero di 
-caselle pari o inferiore al risultato.Non può evitare di 
-spostare la propria pedina, anche nel caso esca 1 come 
+<li>Lancia il dado e sposta la sua pedina per un numero di
+caselle pari o inferiore al risultato.Non può evitare di
+spostare la propria pedina, anche nel caso esca 1 come
 risultato.</li><br>
 
 <li>Può compiere azioni di classe, cambiare classe, comprare
-oggetti, depositare e/o ritirare oggetti dalle slot a cui ha 
+oggetti, depositare e/o ritirare oggetti dalle slot a cui ha
 accesso,</li></ul>
 
 <h1 class="font-title">Turno della morte</h1> (solo dal terzo giro in poi)
 <p class="font">
-Ogni fine turno standard vi è il giro della morte, 
+Ogni fine turno standard vi è il giro della morte,
 tutti i giocatori consegnano una Carta DN ed una Carta Nome
 al giocatore che ha appena concluso il turno standard.<br><br>
 
@@ -145,14 +146,14 @@ cambiamenti seguendo questi tre casi :<ol><br>
 
 <li style="color:red"><span style="color:black"> Se il giocatore riceve solo carte DN vuote dichiara
 il turno della morte finito.</span></li><br>
-<li style="color:red"><span style="color:black"> Se il giocatore riceve la Carta DN piena accompagnata 
+<li style="color:red"><span style="color:black"> Se il giocatore riceve la Carta DN piena accompagnata
 da una Carta Nome corrispondente alla propria Tessera Nome
-attuale, a fine turno il giocatore si dichiara eliminato, perde 
-tutti gli oggetti di ogni inventario, ricomincia dalla casella 
+attuale, a fine turno il giocatore si dichiara eliminato, perde
+tutti gli oggetti di ogni inventario, ricomincia dalla casella
 START e cambia nome.</span></li><br>
-<li style="color:red"><span style="color:black">Se il giocatore riceve la Carta DN piena accompagnata da 
-una Carta Nome che non corrisponde alla propria Tessera 
-Nome attuale, mostra a tutti i giocatori l'incongruenza e cambia Tessera Nome,tutte le 
+<li style="color:red"><span style="color:black">Se il giocatore riceve la Carta DN piena accompagnata da
+una Carta Nome che non corrisponde alla propria Tessera
+Nome attuale, mostra a tutti i giocatori l'incongruenza e cambia Tessera Nome,tutte le
 Carte DN e le Tessere DN vengono rimescolate e ridistribuite come ad inizio
 partita.</span></li>
 </ol>
@@ -175,7 +176,7 @@ partita.</span></li>
 
 
           <div id="tessere" class="collapse lamincard">
-    
+
     <div class="row">
 
     <div class="col-xs-12 col-md-4 p-25">
@@ -196,7 +197,7 @@ partita.</span></li>
     </div>
 
     <div class="row">
-    
+
     <div class="col-xs-12 col-md-6 p-25">
     <h1 class="font-title text-center p-20">Tessere Nome</h1>
    <img class="img-responsive" src="img/sfondologo.jpg"/>
@@ -207,7 +208,7 @@ partita.</span></li>
    <img class="img-responsive" src="img/sfondologo.jpg"/>
    </div>
 
-   </div> 
+   </div>
    </div>
 
 
@@ -279,7 +280,7 @@ partita.</span></li>
           Solo chi possiede la Scheda di Classe Criminale può utilizzare questo tipo di Tessere Oggetto e accedere
         alla Casella Ghetto, nonostante ciò è consentito mantenere queste Tessere Oggetto anche dopo il cambio della propria Scheda di Classe.</p>
 
-  </div> 
+  </div>
 
 
 
@@ -290,7 +291,7 @@ partita.</span></li>
 
 
   <div class="row">
-     
+
         <div class="col-xs-12  col-md-10 col-md-offset-1 card  text-center" data-toggle="collapse" data-target="#carte">
           <div class="card-header">
             <h3 class="font-title resize">Carte</h3>
@@ -364,7 +365,7 @@ partita.</span></li>
         </div>
 
 
-  </div> 
+  </div>
 
 
   <div class="row">
@@ -376,7 +377,7 @@ partita.</span></li>
           </div>
           </div>
 
-          
+
             <div id="schede" class="collapse lamincard">
             <div class="row">
              <div class="col-xs-12 card card-rounded">
@@ -421,7 +422,7 @@ partita.</span></li>
         <img class="img-responsive" src="img/sfondologo.jpg"/>
 
       </div>
-  </div> 
+  </div>
 
            <div class="row" , id="footer">
       <div class="col-md-6 col-md-offset-3 ">
@@ -450,7 +451,7 @@ partita.</span></li>
       <div class="col-xs-12" , id="footerInfo">
         <div class="text-center ">
           <p> &copy 2003 SHUEISHA.
-           All rights reserved Death Note. 
+           All rights reserved Death Note.
            All logos characters names and distinctive likeness
            thereof are trademarks of SHUEISHA<br>
            Site created by Giuseppe Manfredi and based on Bootstrap  </p>
@@ -463,4 +464,3 @@ partita.</span></li>
 </body>
 
 </html>
-
